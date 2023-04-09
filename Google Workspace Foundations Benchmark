@@ -1,0 +1,40 @@
+id: GWB-Account-1
+policy_name:  Ensure 2-Step Verification (Multi-Factor Authentication) is enforced for all users in administrative roles
+description: | Enforce 2-Step Verification (Multi-Factor Authentication) for all users assigned administrative roles. These include roles such as: Help Desk Admin, Groups Admin, Super Admin, Services Admin, User Management Admin ,Mobile Admin ,Android Admin and Custom Admin Roles.
+rationale: | Add an extra layer of security to users accounts by asking users to verify their identity when they enter a username and password. 2-Step Verification (Multi-factor authentication) requires an individual to present a minimum of two separate forms of authentication before access is granted. 2-Step Verification provides additional assurance that the individual attempting to gain access is who they claim to be. With 2-Step Verification, an attacker would need to compromise at least two different authentication mechanisms, increasing the difficulty of compromise and thus reducing the risk.
+logic: | 
+id: GWB-Account-2
+policy_name: Ensure 2-Step Verification (Multi-Factor Authentication) is enforced for all users 
+description: Enforce 2-Step Verification (Multi-Factor Authentication) for all users.
+rationale: | Add an extra layer of security to users accounts by asking users to verify their identity when they enter a username and password. 2-Step Verification (Multi-factor authentication) requires an individual to present a minimum of two separate forms of authentication before access is granted. 2-Step Verification provides additional assurance that the individual attempting to gain access is who they claim to be. With 2-Step Verification, an attacker would need to compromise at least two different authentication mechanisms, increasing the difficulty of compromise and thus reducing the risk.
+logic: |
+id:
+policy_name: |
+description: |
+rationale: |
+logic:
+id:
+policy_name: |
+description: |
+rationale: |
+logic:
+id:
+policy_name: |
+description: |
+rationale: |
+logic:
+id:
+policy_name: |
+description: |
+rationale: |
+logic:
+id:
+policy_name: |
+description: |
+rationale: |
+logic:
+id:
+policy_name: |
+description: |
+rationale: |
+logic:
