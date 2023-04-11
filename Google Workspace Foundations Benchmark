@@ -1,4 +1,5 @@
-id: GWB-Account-1
+- id: 
+label: GWB-Account-1
 policy_name:  Ensure 2-Step Verification (Multi-Factor Authentication) is enforced for all users in administrative roles
 description:  Enforce 2-Step Verification (Multi-Factor Authentication) for all users assigned administrative roles.
 rationale: | 
@@ -14,7 +15,7 @@ To verify the 2-Step Verification (multi-factor authentication) configuration fo
 7. Under Frequency, ensure Allow user to trust device is not checked
 8. Under Methods, ensure Any except verification codes via text, phone call is selected
 logic: | 
-id: GWB-Account-2
+label: GWB-Account-2
 policy_name: Ensure 2-Step Verification (Multi-Factor Authentication) is enforced for all users 
 description: Enforce 2-Step Verification (Multi-Factor Authentication) for all users.
 rationale: | 
@@ -30,7 +31,7 @@ To verify the 2-Step Verification (multi-factor authentication) configuration fo
 7. Under Frequency, ensure Allow user to trust device is not checked
 8. Under Methods, ensure Any except verification codes via text, phone call is selected
 logic: |
-id: GWB-Account-3
+label: GWB-Account-3
 policy_name: Ensure Advanced Protection Program is configured
 description: Enable Google's Advanced Protection Platform for all users and prevent the use of security codes where applicable.
 rationale: | 
@@ -43,7 +44,7 @@ To verify Google's Advanced Protection Program is configured, use the Google Wor
 4. Under Enrollment - Allow users to enroll in the Advanced Protection Program, ensure Enable user enrollment is selected for the desired organizational unit or group
 5. Under Security Codes, ensure Do not allow users to generate security codes is selected for the desired organizational unit or group
 logic:
-id: GWB-Account-4
+label: GWB-Account-4
 policy_name: Ensure password policy is configured for enhanced security
 description: Configure Google Workspace Password Policy with a more secure length and is enforced upon next sign-in to protect against the use of common password attacks.
 rationale: | 
@@ -58,7 +59,7 @@ To verify a strong password policy is configured, use the Google Workspace Admin
 6. Under Strength and Length enforcement, ensure Enforce password policy at next sign-in is set to checked
 7. Under Reuse, ensure Allow password reuse is not checked
 logic:
-id: GWB-Account-5
+label: GWB-Account-5
 policy_name: Ensure Google session control is configured 
 description: Configure Google Workspace's session control to strengthen session expiration.
 rationale: | 
@@ -70,7 +71,7 @@ To verify Google session control is configured, use the Google Workspace Admin C
 3. Select Google session control
 4. Under Web session duration, ensure the duration is set to less than or equal to 12 hours
 logic:
-id: GWB-Application-1
+label: GWB-Application-1
 policy_name: Ensure less secure app access is disabled
 description: Configure Google Workspace security settings to prevent access to less secure apps.
 rationale: | 
@@ -82,7 +83,7 @@ To verify less secure app access is disabled, use the Google Workspace Admin Con
 3. Select Less secure apps
 4. Ensure Disable access to less secure apps (Recommended) is selected
 logic:
-id: GWB-Application-2
+label: GWB-Application-2
 policy_name: Ensure directory data access is externally restricted
 description: Configure Google Workspace's external directory sharing to prevent unrestricted directory data access.
 rationale: |
@@ -95,7 +96,7 @@ To verify directory data access is externally restricted, use the Google Workspa
 4. Under Sharing settings, select External Directory sharing
 5. Ensure Domain and public data is not selected
 logic:
-id: GWB-Calendar-1
+label: GWB-Calendar-1
 policy_name: Ensure external sharing options for primary calendars are configured
 description: Control how much calendar information users in your organization can share externally.
 rationale: |
@@ -109,7 +110,7 @@ To verify external sharing options for primary calendars are configured, use the
 5. Under Sharing settings, select External sharing options for primary calendars
 6. Ensure Only free/busy information (hide event details) is selected
 logic:
-id: GWB-Calendar-2
+label: GWB-Calendar-2
 policy_name: Ensure external invitation warnings for Google Calendar are configured
 description: Configure Google Calendar to warn users when inviting guest outside your domain.
 rationale: |
@@ -123,7 +124,7 @@ To verify external invitation warnings for Google Calendar are configured, use t
 5. Under Sharing settings, select External invitations
 6. Ensure Warn users when inviting guests outside of the domain is checked
 logic:
-id: GWB-Calendar-3
+label: GWB-Calendar-3
 policy_name: Ensure external sharing options for secondary calendars are configured
 description: Control how much calendar information users in your organization can share externally.
 rationale: |
@@ -137,7 +138,7 @@ To verify external sharing options for secondary calendars are configured, use t
 5. Under General settings, select External sharing options for secondary calendars
 6. Ensure Only free/busy information (hide event details) is selected
 logic:
-id: GWB-Drive-1
+label: GWB-Drive-1
 policy_name: Ensure users can create new shared drives
 description: All users should have the ability to create new shared drives.
 rationale: | 
@@ -151,7 +152,7 @@ To verify users can create new shared drives, use the Google Workspace Admin Con
 5. Under Sharing settings, select Sharing options
 6. Under Shared drive creation, ensure Prevent users in <Company> from creating new shared drives is un-checked
 logic:
-id: GWB-Drive-2
+label: GWB-Drive-2
 policy_name: Ensure full-access members cannot modify shared drive settings
 description: Only administrators should be able to modify shared drive settings.
 rationale: | 
@@ -164,7 +165,7 @@ To verify full-access members cannot modify shared drive settings, use the Googl
 4. Select Drive and Docs
 5. Under Shared drive creation, ensure Prevent full-access members from modifying shared drive settings is checked
 logic:
-id: GWB-Drive-3
+label: GWB-Drive-3
 policy_name: Ensure shared drive file access is restricted to members only
 description: Shared drive file access should be restricted to that shared drive's members
 rationale: |
@@ -177,7 +178,7 @@ To verify shared drive file access is restricted to members only, use the Google
 4. Select Drive and Docs
 5. Under Shared drive creation, ensure Prevent non-members of the shared drive from accessing files in the shared drive is checked
 logic:
-id: GWB-Drive-4
+label: GWB-Drive-4
 policy_name: Ensure link sharing default settings are configured
 description: Only the owner of a file should have access of a newly created file by default.
 rationale: |
@@ -190,7 +191,7 @@ To verify link sharing default settings are configured, use the Google Workspace
 4. Select Drive and Docs
 5. Under Link Sharing, ensure OFF is selected
 logic:
-id: GWB-Gmail-1
+label: GWB-Gmail-1
 policy_name: Ensure users cannot delegate access to their mailbox
 description: Mail delegation allows the delegate to read, send, and delete messages on their behalf. For example, a manager can delegate Gmail access to another person in their organization, such as an administrative assistant.
 rationale: |
@@ -203,7 +204,7 @@ To verify users cannot delegate access to their mailbox, use the Google Workspac
 4. Select Gmail
 5. Under User Settings - Mail delegation, ensure Let users delegate access to their mailbox to other users in the domain is not checked
 logic:
-id: GWB-Gmail-2
+label: GWB-Gmail-2
 policy_name: Ensure that DKIM is enabled for all mail enabled domains
 description: DKIM adds an encrypted signature to the header of all outgoing messages. Email servers that get signed messages use DKIM to decrypt the message header, and verify the message was not changed after it was sent.
 rationale: |
@@ -216,7 +217,7 @@ To verify DKIM is enabled for all mail enabled domains, use the Google Workspace
 4. Select Gmail
 5. Under Authenticate email, ensure a DKIM record exists for each mail enabled domain
 logic:
-id: GWB-Gmail-3
+label: GWB-Gmail-3
 policy_name: Enable quarantine admin notifications for Gmail
 description: Quarantines can help prevent spam, minimize data loss, and protect confidential information. They can also help moderate message attachments so users don’t send, open, or click something they shouldn’t.
 rationale: |
@@ -229,7 +230,7 @@ To verify quarantine admin notifications for Gmail is configured, use the Google
 4. Select Gmail
 5. Under Manage quarantines, ensure each quarantine has Notify periodically when messages are quarantined - checked
 logic:
-id: GWB-Gmail-4
+label: GWB-Gmail-4
 policy_name: Ensure protection against encrypted attachments from untrusted senders is enabled
 description: As a Google Workspace administrator, you can protect incoming mail against phishing and harmful software (malware). You can also choose what action to take based on the type of threat detected.
 rationale: |
@@ -242,7 +243,7 @@ To verify protection against encrypted attachments from untrusted senders in ena
 4. Select Gmail
 5. Under Safety - Attachments, ensure Protect against encrypted attachments from untrusted senders is checked
 logic:
-id: GWB-Gmail-5
+label: GWB-Gmail-5
 policy_name: Ensure protection against attachments with scripts from untrusted senders is enabled
 description: As a Google Workspace administrator, you can protect incoming mail against phishing and harmful software (malware). You can also choose what action to take based on the type of threat detected.
 rationale: |
@@ -255,7 +256,7 @@ To verify protection against attachments with scripts from untrusted senders is 
 4. Select Gmail
 5. Under Safety - Attachments, ensure Protect against attachments with scripts from untrusted senders is checked
 logic:
-id: GWB-Gmail-6
+label: GWB-Gmail-6
 policy_name: Ensure protection against anomalous attachment types in emails is enabled
 description: As a Google Workspace administrator, you can protect incoming mail against phishing and harmful software (malware). You can also choose what action to take based on the type of threat detected.
 rationale: |
@@ -268,7 +269,7 @@ To verify protection against anomalous attachment types in emails is enabled, us
 4. Select Gmail
 5. Under Safety - Attachments, ensure Protect against anomalous attachment types in emails is checked
 logic:
-id: GWB-Gmail-7
+label: GWB-Gmail-7
 policy_name: Ensure link identification behind shortened URLs is enabled
 description: Identify links behind short URLs, and display a warning when you click links to untrusted domains.
 rationale: |
@@ -281,7 +282,7 @@ To verify link identification behind shortened URLs is enabled, use the Google W
 4. Select Gmail
 5. Under Safety - Links and external images, ensure Identify links behind shortened URLs is checked
 logic:
-id: GWB-Gmail-8
+label: GWB-Gmail-8
 policy_name: Ensure scan linked images for malicious content is enabled
 description: Scan linked images for malicious content, and display a warning when you click links to untrusted domains.
 rationale: |
@@ -294,7 +295,7 @@ To verify scan linked images is enabled, use the Google Workspace Admin Console:
 4. Select Gmail
 5. Under Safety - Links and external images, ensure Scan linked images is checked
 logic:
-id: GWB-Gmail-9
+label: GWB-Gmail-9
 policy_name: Ensure warning prompt is shown for any click on links to untrusted domains
 description: Display a warning when you click links to untrusted domains.
 rationale: |
@@ -307,7 +308,7 @@ To verify warning prompt is shown for any click on links to untrusted domains, u
 4. Select Gmail
 5. Under Safety - Links and external images, ensure Show warning prompt for any click on links to untrusted domains is checked
 logic:
-id: GWB-Gmail-10
+label: GWB-Gmail-10
 policy_name: Ensure protection against domain spoofing based on similar domain names is enabled
 description: Moves domain spoofing emails to spam folder.
 rationale: | 
@@ -321,7 +322,7 @@ To verify protection against domain spoofing based on similar domain names is en
 5. Under Safety - Spoofing and authentication, ensure Protect against domain spoofing based on similar domain names is checked
 6. Ensure Action is Move email to spam
 logic:
-id: GWB-Gmail-11
+label: GWB-Gmail-11
 policy_name: Ensure protection against spoofing of employee names is enabled 
 description: Moves employee spoofing emails to spam folder.
 rationale: |
@@ -335,7 +336,7 @@ To verify protection against spoofing of employee names is enabled, use the Goog
 5. Under Safety - Spoofing and authentication, ensure Protect against spoofing of employee names is checked
 6. Ensure Action is Move email to spam
 logic:
-id: GWB-Gmail-12
+label: GWB-Gmail-12
 policy_name: Ensure protection against inbound emails spoofing your domain is enabled 
 description: Moves inbound emails spoofing your domain to spam folder.
 rationale: |
@@ -349,7 +350,7 @@ To verify protection against inbound emails spoofing your domain is enabled, use
 5. Under Safety - Spoofing and authentication, ensure Protect against inbound emails spoofing your domain is checked
 6. Ensure Action is Move email to spam
 logic:
-id: GWB-Gmail-13
+label: GWB-Gmail-13
 policy_name: Ensure protection against any unauthenticated emails is enabled
 description: Displays a warning when any message is not authenticated (SPF or DKIM).
 rationale: |
@@ -362,7 +363,7 @@ To verify protection against any unauthenticated emails is enabled, use the Goog
 4. Select Gmail
 5. Under Safety - Spoofing and authentication, ensure Protect against any unauthenticated emails is checked
 logic:
-id: GWB-Gmail-14
+label: GWB-Gmail-14
 policy_name: Ensure groups are protected from inbound emails spoofing your domain
 description: If a group receives an email that is spoofing your domain it is sent to the spam folder.
 rationale: |
@@ -376,7 +377,7 @@ To verify groups are protected from inbound emails spoofing your domain, use the
 5. Under Safety - Spoofing and authentication, ensure Protect your Groups from inbound emails spoofing your domain is checked
 6. Ensure Action is set to Move email to spam
 logic:
-id: GWB-Gmail-15
+label: GWB-Gmail-15
 policy_name: Ensure POP and IMAP access is disabled for all users
 description: POP and IMAP may allow users to access Gmail using legacy or unapproved email clients that do not support modern authentication mechanisms, such as multifactor authentication.
 rationale: |
@@ -389,7 +390,7 @@ To verify POP and IMAP access is disabled for all users, use the Google Workspac
 4. Select Gmail
 5. Under End User Access - POP and IMAP Access, ensure Disable POP and IMAP access for all users is checked
 logic:
-id: GWB-Gmail-16
+label: GWB-Gmail-16
 policy_name: Ensure automatic forwarding options are disabled
 description: You should disable automatic forwarding to prevent users from auto-forwarding mail.
 rationale: |
@@ -402,7 +403,7 @@ To verify automatic email forwarding is disabled for all users, use the Google W
 4. Select Gmail
 5. Under End User Access - Automatic forwarding, ensure Allow users to automatically forward incoming email to another address is not checked
 logic:
-id: GWB-Gmail-17
+label: GWB-Gmail-17
 policy_name: Ensure per-user outbound gateways is disabled
 description: A per-user outbound gateway is a mail server, other than the Google Workspace mail servers, that delivers outgoing mail for a user in your domain.
 rationale: |
