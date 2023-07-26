@@ -189,22 +189,25 @@ To verify shared drive file access is restricted to members only, use the Google
 2. Select Apps
 3. Select Google Workspace
 4. Select Drive and Docs
-5. Under Shared drive creation, ensure Prevent non-members of the shared drive from accessing files in the shared drive is checked
+5. Select Sharing settings
+6. Under Shared drive creation, ensure Allow people who aren't shared drive members to be added to files is unchecked
 logic:
 
-label: GWB-Drive-4
-policy_name: Ensure link sharing default settings are configured
-description: Only the owner of a file should have access of a newly created file by default.
-rationale: |
-Preventing unauthorized users from access sensitive data is paramount in preventing unauthorized or unintentional information disclosures. If the default link sharing setting allows any user with or without the link to access the newly created file, there is a good chance an unauthorized users may access content of which they are not permitted.
-audit: |
-To verify link sharing default settings are configured, use the Google Workspace Admin Console:
-1. Log in to https://admin.google.com as an administrator
-2. Select Apps
-3. Select Google Workspace
-4. Select Drive and Docs
-5. Under Link Sharing, ensure OFF is selected
-logic:
+# Deleted from new verison
+# label: GWB-Drive-4
+# policy_name: Ensure link sharing default settings are configured
+# description: Only the owner of a file should have access of a newly created file by default.
+# rationale: |
+# Preventing unauthorized users from access sensitive data is paramount in preventing unauthorized or unintentional information disclosures. If the default link sharing setting allows any user with or without the link to access the newly created file, there is a good chance an unauthorized users may access content of which they are not permitted.
+# audit: |
+# To verify link sharing default settings are configured, use the Google Workspace Admin Console:
+# 1. Log in to https://admin.google.com as an administrator
+# 2. Select Apps
+# 3. Select Google Workspace
+# 4. Select Drive and Docs
+# 5. Under Link Sharing, ensure OFF is selected
+# logic:
+
 label: GWB-Gmail-1
 policy_name: Ensure users cannot delegate access to their mailbox
 description: Mail delegation allows the delegate to read, send, and delete messages on their behalf. For example, a manager can delegate Gmail access to another person in their organization, such as an administrative assistant.
